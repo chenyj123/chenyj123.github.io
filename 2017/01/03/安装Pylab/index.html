@@ -6,17 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://chenyj.me">
-  <title>Archives: 2016/12 | 陈永杰的Blog</title>
+  <title>Window下安装Pylab | 陈永杰的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="爱咋滴就咋滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="陈永杰的Blog">
-<meta property="og:url" content="http://chenyj.me/archives/2016/12/index.html">
+  <meta name="description" content="前一段时间需要用到Pylab，本来想着就是一个Python的模块安装应该还挺容易，后来才发现果然还是Too naive!
+直接入题吧，我这里用的还是Python2.7。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Window下安装Pylab">
+<meta property="og:url" content="http://chenyj.me/2017/01/03/安装Pylab/index.html">
 <meta property="og:site_name" content="陈永杰的Blog">
-<meta property="og:description" content="爱咋滴就咋滴">
+<meta property="og:description" content="前一段时间需要用到Pylab，本来想着就是一个Python的模块安装应该还挺容易，后来才发现果然还是Too naive!
+直接入题吧，我这里用的还是Python2.7。">
+<meta property="og:image" content="http://oixp9qn3e.bkt.clouddn.com/pipQQ%E6%88%AA%E5%9B%BE20170103105217.png">
+<meta property="og:image" content="http://oixp9qn3e.bkt.clouddn.com/pip.png">
+<meta property="og:image" content="http://oixp9qn3e.bkt.clouddn.com/pip%E5%AE%89%E8%A3%85pylab.png">
+<meta property="og:updated_time" content="2017-01-03T03:34:05.014Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="陈永杰的Blog">
-<meta name="twitter:description" content="爱咋滴就咋滴">
+<meta name="twitter:title" content="Window下安装Pylab">
+<meta name="twitter:description" content="前一段时间需要用到Pylab，本来想着就是一个Python的模块安装应该还挺容易，后来才发现果然还是Too naive!
+直接入题吧，我这里用的还是Python2.7。">
+<meta name="twitter:image" content="http://oixp9qn3e.bkt.clouddn.com/pipQQ%E6%88%AA%E5%9B%BE20170103105217.png">
   
     <link rel="alternative" href="/atom.xml" title="陈永杰的Blog" type="application/atom+xml">
   
@@ -143,86 +151,169 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-安装Pylab" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/29/写在前面/" class="archive-article-date">
-  	<time datetime="2016-12-29T02:09:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-29</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/29/写在前面/">写在前面</a>
+    <h1 class="article-title" itemprop="name">
+      Window下安装Pylab
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/22/hello-world/" class="archive-article-date">
-  	<time datetime="2016-12-22T10:29:31.498Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-22</time>
+        <a href="/2017/01/03/安装Pylab/" class="archive-article-date">
+  	<time datetime="2017-01-03T02:32:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/22/hello-world/">Hello World</a>
-    </h1>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前一段时间需要用到Pylab，本来想着就是一个Python的模块安装应该还挺容易，后来才发现果然还是Too naive!</p>
+<p>直接入题吧，我这里用的还是Python2.7。</p>
+<a id="more"></a>
+<p>Pylab依赖于SciPy、NumPy和Matplotlib三个软件包，所以首先需要安装这三个工具包：</p>
+<p>NumPy:<a href="https://sourceforge.net/projects/numpy/files/NumPy/1.8.1/" target="_blank" rel="external">https://sourceforge.net/projects/numpy/files/NumPy/1.8.1/</a> 选择合适你的.exe直接下载安装，不需多说。</p>
+<p>SciPy:<a href="https://sourceforge.net/projects/scipy/files/scipy/" target="_blank" rel="external">https://sourceforge.net/projects/scipy/files/scipy/</a> 同样选择一个合适的版本直接下载安装。</p>
+<p>Matplotlib:<a href="http://download.csdn.net/download/jakung/4434836" target="_blank" rel="external">http://download.csdn.net/download/jakung/4434836</a> 直接下载安装。</p>
+<p>三个安装包安装完毕之后，打开python命令行：win+R 打开cmd命令行，输入python进入python环境（前提是Python.exe在系统环境变量里，具体设置百度之）：</p>
+<p><img src="http://oixp9qn3e.bkt.clouddn.com/pipQQ%E6%88%AA%E5%9B%BE20170103105217.png" alt=""></p>
+<p>输入命令：</p>
+<blockquote>
+<p>import pylab</p>
+</blockquote>
+<p>系统会提示错误，并指明你缺少某个模块。解决办法就是缺少什么模块就安装什么模块。</p>
+<blockquote>
+<p>exit()</p>
+</blockquote>
+<p>退出Python环境，用pip工具安装。</p>
+<p>同样在cmd里输入pip即可查看pip命令（pip.exe同样要在系统环境变量里）：</p>
+<p><img src="http://oixp9qn3e.bkt.clouddn.com/pip.png" alt=""></p>
+<p>例如，提示错误说缺少 pyparing组件，则到这里-&gt;<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/" target="_blank" rel="external">http://www.lfd.uci.edu/~gohlke/pythonlibs/</a> 查找并下载相应组件（直接用ctrl+F查找很方便），找到 pyparsing-2.1.10-py2.py3-none-any.whl 文件后下载。 在cmd里输入：</p>
+<blockquote>
+<p>pip install D:\安装pylab\pyparsing-2.1.10-py2.py3-none-any.whl</p>
+</blockquote>
+<p>回车即可安装成功。注：命令里install后面是刚刚下载安装包的绝对路径，不方便输入，可把.whl文件直接拖入cmd窗口即可生成路径。</p>
+<p><img src="http://oixp9qn3e.bkt.clouddn.com/pip%E5%AE%89%E8%A3%85pylab.png" alt=""></p>
+<p>安装完一个组件就按照前面一步 import pylab一次，缺少什么就去查找然后下载安装。一个一个安装后，最后输入import pylab 没有任何错误提示，pylab就安装成功了。</p>
+<p>过程参考网址：</p>
+<blockquote>
+<p><a href="http://jingyan.baidu.com/article/e3c78d644b21f23c4c85f5f8.html" target="_blank" rel="external">http://jingyan.baidu.com/article/e3c78d644b21f23c4c85f5f8.html</a></p>
+<p><a href="http://blog.csdn.net/u012700322/article/details/50444856" target="_blank" rel="external">http://blog.csdn.net/u012700322/article/details/50444856</a></p>
+</blockquote>
+<p>小提示： 一些莫名奇怪的问题可以重启Python软件解决和重启电脑解决。重启大法好！！</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>直接打我支付宝！！！你懂得<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/top/">top</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://chenyj.me/2017/01/03/安装Pylab/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/29/写在前面/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">写在前面</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
 
 
           </div>
@@ -245,8 +336,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
